@@ -8,7 +8,7 @@
 /.bundle
 
 # Ignore the default SQLite database.
-# /db/*.sqlite3
+/db/*.sqlite3
 /db/*.sqlite3-journal
 
 # Ignore all logfiles and tempfiles.
@@ -23,3 +23,28 @@
 .byebug_history
 Gemfile.lock
 .DS_Store
+
+# Keep local configuration, signing keys and database copies out of Git.
+.env
+.env.*
+!.env.example
+/config/*.key
+/config/credentials/*.key
+*.sqlite
+*.sqlite3
+*.sqlite-journal
+*.sqlite3-journal
+*.sqlite-wal
+*.sqlite3-wal
+*.sqlite-shm
+*.sqlite3-shm
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+/db/**/*.sql
+/db/**/*.sql.gz
+/db/**/*.dump
+/db/**/*.bak
+/.sass-cache/
+**/.sass-cache/
